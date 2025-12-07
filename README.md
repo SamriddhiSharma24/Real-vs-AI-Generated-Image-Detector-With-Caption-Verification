@@ -96,12 +96,11 @@ The system displays:
 ### **1. Install Dependencies**
 - pip install -r requirements.txt
 ### **2. Run the Flask app**
--python app.py
+- python app.py
  ### **3. Open in browser**
 - http://127.0.0.1:5000/
 
 
-Output and GUI
 ## Output and GUI
 
 <p align="center"><img src="assets/images/s1.png" width="600"/></p>
