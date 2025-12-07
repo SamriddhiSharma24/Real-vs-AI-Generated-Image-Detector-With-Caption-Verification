@@ -94,18 +94,12 @@ The system displays:
 ## Installation & Running
 
 ### **1. Install Dependencies**
-```bash
-pip install -r requirements.txt
+- pip install -r requirements.txt
 ### **2. Run the Flask app**
-```bash
-python app.py
-
+-python app.py
 3. ### **3. Open in browser**
-```bash
-http://127.0.0.1:5000/
+- http://127.0.0.1:5000/
 
-
-Upload an image → Enter caption → Click Analyze to view results.
 
 Output and GUI
 ## Output and GUI
