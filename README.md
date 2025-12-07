@@ -96,7 +96,14 @@ The system displays:
 ### **1. Install Dependencies**
 ```bash
 pip install -r requirements.txt
+2. Run the Flask App
+python app.py
 
+3. Open in Browser
+http://127.0.0.1:5000/
+
+
+Upload an image → Enter caption → Click Analyze to view results.
 
 Output and GUI
 ## Output and GUI
