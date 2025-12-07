@@ -68,15 +68,16 @@ Installation  and Running
 4.Upload an image  and write the caption  and click on analyze button to  view results.
 
 Output and GUI
-![Screenshot](Screenshot(368).png)
-![Screenshot](Screenshot(369).png)
-![Screenshot](Screenshot(370).png)
-![Screenshot](Screenshot(371).png)
-![Screenshot](Screenshot(372).png)
-![Screenshot](Screenshot(373).png)
-![Screenshot](Screenshot(374).png)
+## Output and GUI
 
-  
+![Screenshot 1](assets/images/s1.png)
+![Screenshot 2](assets/images/s2.png)
+![Screenshot 3](assets/images/s3.png)
+![Screenshot 4](assets/images/s4.png)
+![Screenshot 1](assets/images/s5.png)
+![Screenshot 2](assets/images/s6.png)
+![Screenshot 3](assets/images/s7.png)
+
 
 
 
