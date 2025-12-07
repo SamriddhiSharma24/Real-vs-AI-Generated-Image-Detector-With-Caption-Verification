@@ -96,10 +96,12 @@ The system displays:
 ### **1. Install Dependencies**
 ```bash
 pip install -r requirements.txt
-2. Run the Flask App
+### **2. Run the Flask app**
+```bash
 python app.py
 
-3. Open in Browser
+3. ### **3. Open in browser**
+```bash
 http://127.0.0.1:5000/
 
 
