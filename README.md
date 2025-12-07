@@ -70,11 +70,14 @@ Installation  and Running
 Output and GUI
 ## Output and GUI
 
-![Screenshot 1](assets/images/s1.png)
-![Screenshot 2](assets/images/s2.png)
-![Screenshot 3](assets/images/s6.png)
-![Screenshot 4](assets/images/s3.png)
-![Screenshot 1](assets/images/s7.png)
+<p align="center"><img src="assets/images/s1.png" width="600"/></p>
+<p align="center"><img src="assets/images/s2.png" width="600"/></p>
+<p align="center"><img src="assets/images/s3.png" width="600"/></p>
+<p align="center"><img src="assets/images/s4.png" width="600"/></p>
+<p align="center"><img src="assets/images/s5.png" width="600"/></p>
+<p align="center"><img src="assets/images/s6.png" width="600"/></p>
+<p align="center"><img src="assets/images/s7.png" width="600"/></p>
+
 
 
 
