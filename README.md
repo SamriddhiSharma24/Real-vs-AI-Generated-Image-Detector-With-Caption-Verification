@@ -4,7 +4,7 @@ This repository contains a web-based application that can:
 
 1. **Detect whether an image is Real or AI-generated**
 2. **Generate an image caption using BLIP**
-3. **Check whether the user-provided caption matches the image using CLIP**
+3. **Check whether the user provided caption matches the image using CLIP**
 4. **Display confidence scores in an Accuracy Matrix**
 
 ---
@@ -17,13 +17,13 @@ At the same time, captions attached to images online may be misleading.
 This project solves two major problems:
 
 ### **1. Fake Image Detection**
-A fine-tuned **ResNet18** model classifies images into:
+A fine tuned **ResNet18** model classifies images into:
 - **Real**
-- **AI-generated**
+- **AI generated**
 
 ### **2. Caption Verification**
 The system uses:
-- **BLIP** → Auto-generates a caption describing the image  
+- **BLIP** → Auto generates a caption describing the image  
 - **CLIP** → Compares user caption with image meaning  
 
 **Output:**
@@ -55,7 +55,7 @@ User uploads an image and caption through the Flask web interface.
 
 ### **Step 5 — Caption–Image Matching (CLIP)**
 CLIP:
-- Converts user caption + image into embeddings
+- Converts user caption and image into embeddings
 - Computes **Cosine Similarity**
 - Determines **Match / Mismatch**
 
@@ -79,7 +79,7 @@ The system displays:
 - PyTorch  
 - Torchvision  
 - BLIP (Caption generation)  
-- CLIP (Caption–image similarity)  
+- CLIP (Caption image similarity)  
 - ResNet18 (Fake image classifier)
 
 ### **Utilities**
