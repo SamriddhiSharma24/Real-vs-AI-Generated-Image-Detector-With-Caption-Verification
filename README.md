@@ -97,7 +97,7 @@ The system displays:
 - pip install -r requirements.txt
 ### **2. Run the Flask app**
 -python app.py
-3. ### **3. Open in browser**
+ ### **3. Open in browser**
 - http://127.0.0.1:5000/
 
 
