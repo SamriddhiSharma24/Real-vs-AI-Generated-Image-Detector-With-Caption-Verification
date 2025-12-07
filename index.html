@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Image Detector</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #4a90e2, #9013fe);
+            color: #fff;
+            min-height: 100vh;
+            font-family: "Poppins", sans-serif;
+        }
+        .container {
+            margin-top: 60px;
+            max-width: 650px;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+        .btn-primary {
+            background-color: #673ab7;
+            border: none;
+            font-weight: 600;
+        }
+        .btn-primary:hover {
+            background-color: #5e35b1;
+        }
+        .result-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        #preview {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+            display: none;
+        }
+        h1 {
+            font-weight: 700;
+        }
+        table {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Fake Image & Caption Detector</h1>
+        <p class="lead">Upload an image and enter a caption to check if the image is AI-generated or real, and whether the caption matches!</p>
+
+        <div class="card p-4 mt-4">
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="image" class="form-label">Select Image</label>
+                    <input class="form-control" type="file" name="image" id="image" accept="image/*" required onchange="previewImage(event)">
+                </div>
+                <img id="preview" alt="Image Preview">
+
+                <div class="mb-3 mt-3">
+                    <label for="caption" class="form-label">Enter Caption</label>
+                    <input type="text" class="form-control" name="caption" id="caption" placeholder="Describe the image..." required>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Analyze</button>
+            </form>
+
+            {% if result %}
+            <div class="result-box mt-4">
+                <h4>Analysis Result</h4>
+                <hr>
+                <div style="text-align: left;">{{ result|safe }}</div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        function previewImage(event) {
+            const output = document.getElementById('preview');
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.style.display = "block";
+        }
+    </script>
+</body>
+</html>
